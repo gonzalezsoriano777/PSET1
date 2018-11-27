@@ -4,37 +4,33 @@
 
 // int main(void)
 // {
-//    float change;
-//    int count;
+//  int multipleWhiles(int anAmount)
+// {
+//    int change = anAmount;
 //    int coins = 0;
 
-
-//  while(true)
-//  {
-//    printf("Hello Kind sir, What is the changed that is owed back?\n");
-//    change = get_float();
-//  }
-//   while(count >= 25)
+//   while(change >= 25)
 //   {
-//     count -= 25;
+//     change -= 25;
 //     coins++;
 //   }
-//   while(count >= 10)
+//   while(change >= 10)
 //   {
-//    count -= 10;
+//    change -= 10;
 //    coins++;
 //   }
-//   while(count >= 5)
+//   while(change >= 5)
 //   {
-//    count -= 5;
+//    change -= 5;
 //    coins++;
 //   }
-//   while(count >= 1)
+//   while(change >= 1)
 //   {
-//     count -= 1;
+//     change -= 1;
 //     coins++;
 //   }
 //   return coins;
+//  }
 // }
 
 
@@ -43,7 +39,7 @@ int main(void)
  {
        float cash;
        int num;
-      int count;
+      int change;
 
       while(true)
       {
@@ -60,30 +56,30 @@ int main(void)
      // to be able to convert a decimal into an integer..
      num = cash * 100;
 
-     // to actually count the number of coins
-     count= 0;
+     // to actually change the number of coins
+     change= 0;
 
     // while loops for quarter
      while (num >= 25)
      {
-      // counts the number of quarters then, switches to the next available coin for the change.. continuing thr loop until the change is given properly.
-      count += 1;
+      // changes the number of quarters then, switches to the next available coin for the change.. continuing thr loop until the change is given properly.
+      change += 1;
       num = num - 25;
      }
 
      while (num >= 10)
      {
-      count += 1;
+      change += 1;
       num = num - 10;
      }
 
      while (num >= 5)
      {
-      count += 1;
+      change += 1;
       num = num - 5;
      }
 
-        printf("%i\n", count + num); // prints the integer in a new line, adding both count (count of number of coins) and num (converted into an int with the number of cents available for change)
+        printf("%i\n", change + num); // prints the integer in a new line, adding both change (change of number of coins) and num (converted into an int with the number of cents available for change)
 
         return 0;
 }
