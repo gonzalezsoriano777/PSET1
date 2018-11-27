@@ -1,6 +1,44 @@
 #include <cs50.h>
 #include <stdio.h>
 
+
+// int main(void)
+// {
+//    float change;
+//    int count;
+//    int coins = 0;
+
+
+//  while(true)
+//  {
+//    printf("Hello Kind sir, What is the changed that is owed back?\n");
+//    change = get_float();
+//  }
+//   while(count >= 25)
+//   {
+//     count -= 25;
+//     coins++;
+//   }
+//   while(count >= 10)
+//   {
+//    count -= 10;
+//    coins++;
+//   }
+//   while(count >= 5)
+//   {
+//    count -= 5;
+//    coins++;
+//   }
+//   while(count >= 1)
+//   {
+//     count -= 1;
+//     coins++;
+//   }
+//   return coins;
+// }
+
+
+
 int main(void)
  {
        float cash;
