@@ -1,3 +1,5 @@
+// tells user hello world
+
 #include <cs50.h>
 #include <stdio.h>
 
